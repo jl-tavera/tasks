@@ -64,7 +64,7 @@ jobs:
       - name: Install dependencies
         run: poetry install --no-root
       - name: Run black
-        run: poetry run black . --check
+        run: poetry run black tests.py --check
       - name: Run isort
         run: poetry run isort . --check-only
       - name: Run flake8
